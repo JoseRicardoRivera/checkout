@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+
+        <h1 class="checkout">Checkout</h1>
+        <section class="contactInformation">
+            <div class="contentInformation">
+                <h2 class="titleInformation">Contact information</h2>
+        
+                    <form action="#" method="post">
+                        <label class="infoLabel" for="email">E-mail</label><br>
+                            <i class="fas fa-envelope iconMove"></i><input class="infoInput" type="email" name="email" placeholder="Enter your email..."><br>
+                        <label class="infoLabel" for="tel">Phone</label><br>
+                            <i class="fas fa-phone-alt iconMove"></i><input class="infoInput" type="tel" name="tel" placeholder="Enter your phone...">
+                        <h2 class="titleInformation">Shipping address</h2>
+                        <label class="infoLabel" for="name">Full name</label><br>
+                            <i class="fas fa-user-circle iconMove"></i><input class="infoInput" type="text" name="name" placeholder="Your name..." ><br>
+                            <label class="infoLabel" for="address">Address</label><br>
+                            <i class="fas fa-home iconMove"></i><input class="infoInput" type="text" name="address" placeholder="Your address..." ><br>
+                        <label class="infoLabel" for="city">City</label><br>
+                            <i class="fas fa-city iconMove"></i><input class="infoInput" type="text" name="city" placeholder="Your city..." ><br>
+                            <label class="infoLabel" for="country">Country</label><br>
+                            <i class="fas fa-globe-americas"></i><select class="selectCountry" name="country" id="">
+                                <option selected disabled="">Your country...</option>
+                                <option value="1">España</option>
+                                <option value="2">Francia</option>
+                                <option value="3">México</option>
+                            </select>
+                                <label class="infoLabel" for="postal">Postal code</label>
+                                <input class="selectCountries" type="text" name="postal" required="" pattern="[0-9]{4}" placeholder="Your postal code..."><br>
+                                <input type="checkbox" required name="check"><label class="infoLabel" for="check"> Save this information for next time</label><br>
+                            <button class="submitButton">Continue</button>
+                    </form>
+            </div>
+        </section>
+
+        <section class="totalCheckout">
+           <div class="storeCheckout">
+                <div class="payCheckout">
+                    <img src="img/photo1.png" alt="">
+                    <div class="infoPay">
+                        <p class="parrafoClothes">Vintage Backbag</p>
+                        <span class="spanOrange">$54.99</span><span class="spanSmall">$94.99</span>
+                        <div class="countPay">
+                            <p class="more">-</p>
+                            <p class="parrafoNormal">1</p>
+                            <p class="more">+</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="payCheckout2">
+                    <img src="img/photo2.png" alt="">
+                    <div class="infoPay">
+                        <p class="parrafoClothes">Levi Shoes</p>
+                        <span class="spanOrange">$74.99</span><span class="spanSmall">$124.99</span>
+                        <div class="countPay">
+                            <p class="more">-</p>
+                            <p class="parrafoNormal">1</p>
+                            <p class="more">+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <p class="parrafoNormal">Shipping</p>
+                    <p class="parrafoNormal">$19</p>
+                </div>
+                <div class="shipping">
+                    <p class="parrafoNormal">Total</p>
+                    <p class="parrafoNormal">$148.98</p>
+                </div>
+           </div> 
+        </section>
+    </main>
+</body>
+</html>
